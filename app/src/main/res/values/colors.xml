@@ -1,0 +1,68 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#38394D</color>
+    <color name="colorPrimaryDark">#38394D</color>
+    <color name="colorAccent">#5e56f9</color>
+
+
+    <color name="zm_toolbar_stopshare_noraml">#ff7977</color>
+    <color name="zm_toolbar_stopshare_press">#ea0500</color>
+    <color name="zm_toolbar_stopshare_focus">#ff7977</color>
+    <color name="zm_toolbar_stopannotation_noraml">#2da5ff</color>
+    <color name="zm_toolbar_stopannotation_press">#2d8cff</color>
+    <color name="zm_toolbar_stopannotation_focus">#2dd7ff</color>
+
+    <color name="color_private_label">#E4E4ED</color>
+    <color name="color_public_label">#747487</color>
+
+    <color name="color_private_input">#FFFFFF</color>
+    <color name="color_public_input">#232333</color>
+
+    <color name="color_not_set">#747487</color>
+
+    <color name="zm_notification_icon_bg">#9e9e9e</color>
+
+    <color name="launch_status_bar">#3FB7FB</color>
+    <color name="blue_disable">#F2F2F7</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_normal">#0E71EB</color>
+    <color name="blue_pressed">#0C63CE</color>
+    <color name="blue_light_pressed">#D7E6F8</color>
+    <color name="blue_text_normal">#0E72ED</color>
+    <color name="blue_text_pressed">#2D61BA</color>
+    <color name="blue_text_disable">#BABACC</color>
+    <color name="white_helf">#7FFFFFFF</color>
+    <color name="setting_text">#232333</color>
+    <color name="line_color">#EDEDF4</color>
+    <color name="item_pressed">#E7F1FD</color>
+    <color name="version_text">#747487</color>
+    <color name="done_text">#2D8CFF</color>
+    <color name="input_hint">#BABACC</color>
+    <color name="wrong_pass_text">#FF1744</color>
+    <color name="display_name_text">#494952</color>
+    <color name="renderer_text_selected">#0E71EB</color>
+    <color name="renderer_info_selected">#0E72ED</color>
+
+
+    <color name="text_black">#131619</color>
+    <color name="text_grey">#F7F9FA</color>
+    <color name="lower_third_disable">#17525280</color>
+    <color name="lower_third_disable_show">#444B53</color>
+    <color name="lower_third_purple">#493AB7</color>
+    <color name="lower_third_light_purple">#A477FF</color>
+    <color name="lower_third_green">#66CC84</color>
+    <color name="lower_third_orange">#FF8422</color>
+    <color name="lower_third_red">#FFFD3D4A</color>
+    <color name="lower_third_yellow">#FFFFBF39</color>
+    <color name="lower_third_blue">#1E71D6</color>
+    <color name="lower_third_grey">#F7F9FA</color>
+
+    <color name="color_feedback_result_title">#131619</color>
+    <color name="color_feedback_item_title">#222230</color>
+    <color name="color_feedback_response_count">#6E7680</color>
+    <color name="color_poll_process">#0E72ED</color>
+    <color name="color_has_pushed">#6E7680</color>
+</resources>

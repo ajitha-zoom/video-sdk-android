@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_37"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:text="@string/app_name"
+        android:textSize="25dp"
+        android:padding="20dp"/>
+    <Button
+        style="@style/ZMButton"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:onClick="gotoJoin"
+        android:text="@string/join" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Video SDK</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+
+    <string name="create">Create</string>
+    <string name="join">Join Session</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="actionbar_done">Done</string>
+    <string name="save">Save</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+    <string name="create_title">Create a Session</string>
+    <string name="join_title">Join a Session</string>
+    <string name="session_name">Session Name</string>
+    <string name="session_name_hint">Required</string>
+    <string name="session_name_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ !#$%&#038;()+-:;&#060;&#061;.&#062;?@[]^_{}|~,</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_name_hint">Required</string>
+    <string name="password">Password</string>
+    <string name="sessionIdleTimeoutMins">SessionIdleTimeoutMins</string>
+    <string name="password_hint">Optional</string>
+    <string name="renderer">Renderer</string>
+    <string name="wrong_pass_tips">Wrong password.Try again</string>
+    <string name="copy_tips">Copied to clipboard</string>
+
+    <string name="renderer_option">Renderer Options</string>
+    <string name="renderer_option_zoom">Zoom renderer</string>
+
+    <string name="setting_title">Settings</string>
+
+    <string name="share_title">Share</string>
+    <string name="share_screen">Share Device Screen</string>
+    <string name="share_screen_info">Everything on your device screen will be shared</string>
+    <string name="share_picture">Share a Picture</string>
+    <string name="share_picture_info">Share a picture from your device</string>
+
+    <string name="leave_message">Do you want to leave this session?</string>
+    <string name="leave_end_text">End Session</string>
+    <string name="leave_leave_text">Leave Session</string>
+
+    <string name="close">Close</string>
+</resources>

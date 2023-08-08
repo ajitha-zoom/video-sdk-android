@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp_22"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_22"
+                android:paddingBottom="@dimen/dp_10"
+                android:textColor="@color/setting_text"
+                android:textSize="@dimen/textsize_17"
+                android:text="@string/cancel" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/setting_text"
+                android:textSize="@dimen/textsize_20"
+                tool:text="title" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/ZMTextView"
+                android:text="@string/session_name"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/session_edit"
+                style="@style/ZMEditText"
+                android:layout_marginLeft="@dimen/dp_22"
+                android:digits="@string/session_name_digits"
+                android:maxLength="150"
+                android:hint="@string/session_name_hint" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvUserName"
+                style="@style/ZMTextView"
+                android:text="@string/your_name"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/userName_edit"
+                style="@style/ZMEditText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_63"
+                android:layout_marginLeft="@dimen/dp_22"
+                android:hint="@string/your_name_hint" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvPassword"
+                style="@style/ZMTextView"
+                android:text="@string/password"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/password_edit"
+                style="@style/ZMEditText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_63"
+                android:layout_marginLeft="@dimen/dp_22"
+                android:hint="@string/password_hint"
+                android:maxLength="10" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/dummy"
+                style="@style/ZMTextView"
+                android:text=""
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/btn_join"
+                style="@style/ZMButton"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_24"
+                android:onClick="onClickJoinSession"
+                android:text="@string/create"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

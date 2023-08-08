@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_100"
+    android:background="@drawable/video_item_bg"
+    android:clipChildren="true"
+    android:padding="1dp">
+
+    <us.zoom.sdk.ZoomVideoSDKVideoView
+        android:id="@+id/videoRenderer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:render_textureView="false"
+        android:visibility="gone">
+
+    </us.zoom.sdk.ZoomVideoSDKVideoView>
+
+    <FrameLayout
+        android:id="@+id/video_off_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#232333"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/video_off_tips"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scaleType="centerInside" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_gravity="end|bottom"
+        android:background="#99000000"
+        android:orientation="horizontal"
+        android:paddingHorizontal="6dp">
+
+        <TextView
+            android:id="@+id/item_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="Star Lord"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/item_audio_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/icon_status_mute" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
