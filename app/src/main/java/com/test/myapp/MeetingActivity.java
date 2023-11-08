@@ -52,6 +52,7 @@ import us.zoom.sdk.ZoomVideoSDKAudioHelper;
 import us.zoom.sdk.ZoomVideoSDKAudioRawData;
 import us.zoom.sdk.ZoomVideoSDKAudioStatus;
 import us.zoom.sdk.ZoomVideoSDKCRCCallStatus;
+import us.zoom.sdk.ZoomVideoSDKCameraDevice;
 import us.zoom.sdk.ZoomVideoSDKChatHelper;
 import us.zoom.sdk.ZoomVideoSDKChatMessage;
 import us.zoom.sdk.ZoomVideoSDKChatMessageDeleteType;
@@ -687,7 +688,17 @@ public class MeetingActivity extends AppCompatActivity implements ZoomVideoSDKDe
         if (zoomSDKUserInfo.getVideoStatus().isOn()) {
             ZoomVideoSDK.getInstance().getVideoHelper().stopVideo();
         } else {
+            List<ZoomVideoSDKCameraDevice> list = ZoomVideoSDK.getInstance().getVideoHelper().getCameraList();
             ZoomVideoSDK.getInstance().getVideoHelper().startVideo();
+            for (ZoomVideoSDKCameraDevice item : list) {
+                Log.d("ajitha", item.getDeviceName());
+                Log.d("ajitha", String.valueOf(item.isSelectedDevice()));
+                Log.d("ajitha", item.getDeviceId());
+
+                if(item.getDeviceName().contains("Back")) {
+                    ZoomVideoSDK.getInstance().getVideoHelper().switchCamera(item);
+                }
+            }
         }
     }
 
